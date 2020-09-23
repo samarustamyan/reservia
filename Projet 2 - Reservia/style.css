@@ -1,6 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
-    padding-top: O;
+    padding-top: 0;
     margin: 0;
 }
 
@@ -221,6 +221,7 @@ section {
     margin: 30px;
     display: flex;
     justify-content: space-between;   
+    align-items: flex-start;
 }
 
 .hebergements_block {
@@ -230,8 +231,8 @@ section {
     background-color: #fff;
     border: 5px solid #fff;
     border-radius: 20px;
-    -webkit-box-shadow: 10px 10px 25px -19px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 25px -19px rgba(0,0,0,0.75);
+    
+   
     box-shadow: 10px 10px 25px -19px rgba(0,0,0,0.75);
     cursor: pointer;
 }
@@ -246,10 +247,11 @@ section {
 
 
 #plus {
+    padding-top: 10px;
+    padding-left: 30px;
     font-weight: bold;
     color: #000;
     text-decoration: none;
-     align-content: end;
 }
 
 
@@ -282,9 +284,7 @@ section {
     width: 90%;
     background-color: #ffff;
     border-radius: 20px;
-    border: 5px solid #fff;  
-    -webkit-box-shadow: 10px 10px 25px -19px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 25px -19px rgba(0,0,0,0.75);
+    border: 5px solid #fff;
     box-shadow: 10px 10px 25px -19px rgba(0,0,0,0.75);
     cursor: pointer;
 }
@@ -347,8 +347,8 @@ section {
 
 #activite_block {
     display: grid;
-    grid-template-columns: repeat(4, 270px);
-    grid-auto-rows: minmax(200px, auto);
+    grid-template-columns:  repeat(4, 1fr);
+    grid-auto-rows: minmax(220px, auto);
     justify-content: space-between;
     
     grid-gap: 30px;
@@ -360,13 +360,11 @@ section {
     background-size: cover;
     background-position: center;
     border-radius: 15px;
-        -webkit-box-shadow: 10px 10px 25px -19px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 25px -19px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 25px -19px rgba(0,0,0,0.75); 
 }
 
 .photo1 {
-    grid-row: 1/3;
+    grid-row: span 2;
     background-image: url(images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);  
 }
 
@@ -379,22 +377,22 @@ section {
 
 .photo3 {
    background-image: url(images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-   height: 160px;
+   height: 180px;
    grid-column: 2/3;
-   grid-row: 2/3;   
+   grid-row: 2/3;  
    align-self: end;
 }
 
 .photo4 {
     grid-column: 3 / 3;
-    grid-row: 1 / 3;
+    grid-row: span 2;
     background-image: url(images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);  
 }
 
 
 .photo5 {
     background-image: url(images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-    height: 160px;
+   height: 180px;
     grid-column: 4/4;
     grid-row: 1/2;   
 }
@@ -411,21 +409,26 @@ section {
     align-items: center;
     bottom: 0;
     background-color: #ffff;
-    width: 98%;
-    padding-left: 6px;
+    width: 100%;
+    
     height: 60px;
     border-radius: 0px 0px 15px 15px;
     font-weight: bold;
     font-size: 0.9em;
 }
 
+.activ_name p {
+    padding-left: 6px;
+} 
 
 footer {
     position: relative;
+    width: 100%;
     margin-top: 55px;
     background-color: #F2F2F2;
     padding-top: 50px;
     padding-bottom: 50px;
+    display: flex;  
 }
 
 #footer_box {
@@ -458,13 +461,14 @@ footer h4 {
 }
 
 
-@media (max-width: 1024px){
-#page_principal {
-    width: auto;
-    }
+@media screen and (max-width: 800px){
     
-    header {
-        
+    #page_principal {
+        width: auto;
+    }
+
+    .title {
+        width: 90%;
     }
     
     #menu {
@@ -474,15 +478,42 @@ footer h4 {
     section {
         flex-direction: column-reverse;
     }
-    article {
+    
+    #hebergements {
+      background-color: #fff;
+    }
+    
+    #plus_populaires {
+        margin-left: 0;
+    }
+    
+    .plus_populaires_block {
+        width: 90%;
+    }
+    
+    .hebergements_block {
+        width: 90%;
+    }
+    
+    .article {
         display: flex;
         flex-direction: column;
     }
     
     
-   
-    
+    #activite_block {
+        display: flex;
+        flex-direction: column;
+    }
 
-
+    .photo1, .photo2, .photo3, .photo4, .photo5, .photo6 {
+        height: 200px;
+        width: 90%;
+        align-self: center;
+    }
     
+    #footer_box {
+        display: flex;
+        flex-direction: column;
+    }
 }
