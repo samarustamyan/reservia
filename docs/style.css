@@ -62,8 +62,8 @@ header {
 
 #input_form { 
     border-radius: 15px;
-    width: 400px;
-    height: 50px;
+    width: 30%;
+    height: 46px;
 
 }
 
@@ -72,7 +72,7 @@ header {
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
     height: 100%;
-    width: 55%;
+    width: 57%;
     outline: none;
     font-weight: bold;
     padding-left: 10px;
@@ -80,7 +80,7 @@ header {
 }
 
 button { 
-    width: 35%;
+    width: 32%;
     height: 100%;
     float: right;
     border: none;
@@ -101,7 +101,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10%;
+    width: 11%;
     height: 100%;
     float: left;
     background: #F2F2F2;
@@ -109,10 +109,23 @@ button:hover {
 }
 
 label img {
-
     width: 15px;
     height: 20px;
 }
+
+#loupe {
+    display: none;
+    width: 11%;
+    height: 100%;
+    background-color: #0065FC;
+    border-radius: 15px;
+}
+
+#loupe img {
+    width: 15px;
+    height: 20px;
+}
+
 
 h2 {
     font-weight: 800;
@@ -127,14 +140,23 @@ h4 {
 }
 
 #filtres {
-    width: 65%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    margin-top: 25px;
+    margin-top: 20px;
     padding: 0;
     font-weight: bold;
 
+}
+
+#filtres ul {
+    display:flex;
+    width: 90%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
 .filtre_block {
@@ -162,7 +184,6 @@ h4 {
 }
 
 .filtre_text {
-    display: block;
     padding: 8px;
 }
 
@@ -226,15 +247,17 @@ section {
 
 .hebergements_block {
     margin-bottom: 30px;
-    height: 200px;
+    height: 190px;
     width: 230px;
     background-color: #fff;
     border: 5px solid #fff;
-    border-radius: 20px;
-    
-   
-    box-shadow: 10px 10px 25px -19px rgba(0,0,0,0.75);
+    border-radius: 20px;box-shadow: 10px 10px 25px -19px rgba(0,0,0,0.75);
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.hebergements_block:hover {
+    opacity: 0.6;
 }
 
 .hebergements_photo {
@@ -280,7 +303,7 @@ section {
 .plus_populaires_block {
     display: flex;
     margin-bottom: 30px;
-    height: 140px;
+    height: 130px;
     width: 90%;
     background-color: #ffff;
     border-radius: 20px;
@@ -468,7 +491,25 @@ footer h4 {
     }
 
     .title {
+        
+        align-items: center;
+    }
+    
+    #input_form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
+    }
+    
+    button {
+        display: none;
+    }
+   
+    #loupe {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     #menu {
