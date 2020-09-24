@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    height: 50px;
+    height: 60px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -20,7 +20,6 @@ header {
 #logo{
     display: flex;
     align-content: flex-end;
-    flex-direction: row;
 }
 
 
@@ -28,7 +27,6 @@ header {
 
 #menu {
     display: flex;
-    flex-direction: row;
     align-items: flex-end; 
     
 }
@@ -49,7 +47,7 @@ header {
 
 #menu div:hover {
     border-top: 2px solid #0065FC;
-    padding-top: 25px;   
+    padding-top: 35px;   
 }
 
 #menu div a:hover {
@@ -57,10 +55,13 @@ header {
 }
 
 .title {
+    justify-content: space-between;
     margin-top: 50px;
 }
 
 #input_form { 
+    display: flex;
+    align-items: center;
     border-radius: 15px;
     width: 30%;
     height: 46px;
@@ -133,14 +134,15 @@ h2 {
     margin: 0;
     
 }
+
 h4 {
+    margin-top: 5px;
     font-weight: 300;
-    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 #filtres {
-    width: 70%;
+    width: 75%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -279,6 +281,7 @@ section {
 
 
 .description_block {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -315,19 +318,22 @@ section {
 
 
 .description_plus_populaires {
+    position: relative;
     display: flex;
+    padding-top: 10px;
     flex-direction: column;
-    padding-left: 10px;
+    left: 10px;
 }
 
 
 .description_plus_populaires .rating {
-   padding-top: 30px;
+    position: absolute;
+    bottom: 5px;
+    
 }
 
 .name_description {
     margin-bottom: 5px;
-    
     font-size: 15px;
     font-weight: bold;
 }
@@ -348,25 +354,24 @@ section {
 
 
 .rating {
-	display: inline-block;
+	padding-top: 5px;
 	font-size: 0;
 }
-.rating span {
-	padding: 0;
-	font-size: 20px;
-	line-height: 1;
+.rating img {
+	padding-left: 2px;
+	width: 15px;
 	color: #F2F2F2;
 }
-.rating > span:before {
-	content: '★';
-}
-.rating > span.active {
-	color: #0065FC;
-}
+
 
 /*  Activités  à Marseille */
 
+/*title*/
 
+#activites_a_marseille {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
 
 #activite_block {
     display: grid;
@@ -451,7 +456,7 @@ footer {
     background-color: #F2F2F2;
     padding-top: 50px;
     padding-bottom: 50px;
-    display: flex;  
+    display: flex; 
 }
 
 #footer_box {
@@ -490,16 +495,19 @@ footer h4 {
         width: auto;
     }
 
-    .title {
-        
-        align-items: center;
+    header, .title, #filtres, #info {
+        padding-left: 28px;
     }
     
+    h2 {
+        font-size: 1.6em;
+    }
     #input_form {
+        margin-top: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 90%;
     }
     
     button {
@@ -513,7 +521,15 @@ footer h4 {
     }
     
     #menu {
+        
        flex-direction: column-reverse;
+    }
+    
+    
+    
+    #menu div:hover {
+    border-top: none;
+    padding-top: none;   
     }
     
     section {
@@ -545,6 +561,7 @@ footer h4 {
     #activite_block {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
 
     .photo1, .photo2, .photo3, .photo4, .photo5, .photo6 {
