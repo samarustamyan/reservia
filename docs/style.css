@@ -11,42 +11,46 @@ body {
 }
 
 header {
+  
+    position: relative;
     display: flex;
-    align-content: center;
+    align-content: flex-end;
     justify-content: space-between;
 }
 
 #logo{
     display: flex;
-    align-self: center;
+    align-self: start;
+    align-content: flex-end;
     
 }
 
 #menu {
     display: flex;
-    align-self: center; 
+    align-items: flex-end; 
+    width: 100%;
+    justify-content: flex-end;
 }
 
-#menu a {
+#menu a{
     color: #000;
-   
     text-decoration: none;
-    margin-left: 2em;
-    margin-right: 2em;    
+    padding-right: 25px;
+    padding-left: 25px;
 }
+
+
 
 .media_menu{
     display: flex;
-    align-items: center;
-
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-
-#menu_inscrire {
+#menu_inscrire a{
     display: flex;
     color:#0065FC;
-    text-decoration: none;    
-    align-self: center;
+    font-weight: bold;
 }
 
 
@@ -54,6 +58,13 @@ header {
 
 #menu div a:hover {
     color :#0065FC;
+}
+
+.media_menu div {
+     padding-top: 20px;
+}
+.media_menu div:hover {
+     border-top: 2px solid #0065FC;
 }
 
 .title {
@@ -188,7 +199,7 @@ h4 {
 }
 
 .filtre_text {
-    padding: 15px;
+    padding: 8px;
 }
 
 .filtre_block:hover{
@@ -325,6 +336,7 @@ section {
     padding-top: 10px;
     flex-direction: column;
     left: 10px;
+    flex-wrap: wrap;
 }
 
 
@@ -495,18 +507,54 @@ footer h4 {
     
     #page_principal {
         width: auto;
-        margin-left: 5px;
-        margin-right: 5px;
     }
 
+    header {
+        flex-wrap: wrap;
+    }
+    
     #menu div:hover {
-    border-top: none;  
+        border-top: none;  
     } 
     
-    #filtres {
-        width: 100%;
-        font-size: 23px;
+    #logo {
+          position: absolute;
+        top: 10px;
     }
+    #menu {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin-top: 20px;
+        font-size: 20px;
+      
+        
+    }
+    .media_menu {
+        margin-top: 50px;
+        
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 2px solid #FBFBFB;
+    }
+    
+   
+    #menu_inscrire {
+       display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        align-items:flex-start;
+    }
+    
+    .media_menu div {
+        padding-bottom: 20px;
+    }
+    
+    .media_menu div:hover {
+        border-bottom: 2px solid #0065FC;
+    }
+    
+    
     #filtres p {
         margin-bottom: 0;
     }
@@ -518,20 +566,7 @@ footer h4 {
     .filtre_block {
         margin-bottom: 10px;
     }
-    
-    #menu {
-
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .media_menu{
-        margin-top: 120px;
-         width: 100%;
-        display: flex;
-        align-items: flex-end;
-        border-bottom: 2px solid #000;
-    }
-    
+   
     h2 {
         font-size: 1.6em;
     }
