@@ -11,18 +11,13 @@ body {
 }
 
 header {
-  
     position: relative;
     display: flex;
     align-content: flex-end;
-    justify-content: space-between;
 }
 
 #logo{
-    display: flex;
-    align-self: start;
-    align-content: flex-end;
-    
+    display: flex;   
 }
 
 #menu {
@@ -39,22 +34,15 @@ header {
     padding-left: 25px;
 }
 
-
-
 .media_menu{
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
 }
 
 #menu_inscrire a{
-    display: flex;
     color:#0065FC;
     font-weight: bold;
 }
-
-
-
 
 #menu div a:hover {
     color :#0065FC;
@@ -68,8 +56,7 @@ header {
 }
 
 .title {
-    justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 #input_form { 
@@ -78,6 +65,7 @@ header {
     border-radius: 15px;
     width: 30%;
     height: 46px;
+    
 
 }
 
@@ -90,13 +78,12 @@ header {
     outline: none;
     font-weight: bold;
     padding-left: 10px;
-    font-size: 1em;
+    font-size: 1em;   
 }
 
 button { 
     width: 32%;
     height: 100%;
-    float: right;
     border: none;
     background-color: #0065FC;
     color:#fff;
@@ -117,7 +104,6 @@ button:hover {
     justify-content: center;
     width: 11%;
     height: 100%;
-    float: left;
     background: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
 }
@@ -129,7 +115,7 @@ label img {
 
 #loupe {
     display: none;
-    width: 11%;
+    width: 12%;
     height: 100%;
     background-color: #0065FC;
     border-radius: 15px;
@@ -211,7 +197,6 @@ h4 {
     margin-top: 25px;
     margin-bottom: 25px;
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -326,9 +311,12 @@ section {
     border: 5px solid #fff;
     box-shadow: 10px 10px 25px -19px rgba(0,0,0,0.75);
     cursor: pointer;
+    transition: 0.5s;
 }
 
-
+.plus_populaires_block:hover {
+    opacity: 0.6;
+}
 
 .description_plus_populaires {
     position: relative;
@@ -397,12 +385,14 @@ section {
 }
 
 
-.photo1, .photo2, .photo3, .photo4, .photo5, .photo6 {
+#activite_block div {
     position: relative;
     background-size: cover;
     background-position: center;
     border-radius: 15px;
     box-shadow: 10px 10px 25px -19px rgba(0,0,0,0.75); 
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .photo1 {
@@ -445,14 +435,17 @@ section {
     grid-row: 2/3;    
 }
 
+
+#activite_block div:hover {
+    opacity: 0.6;
+}
 .activ_name {
     position: absolute;
     display: flex;
     align-items: center;
     bottom: 0;
     background-color: #ffff;
-    width: 100%;
-    
+    width: 100%; 
     height: 60px;
     border-radius: 0px 0px 15px 15px;
     font-weight: bold;
@@ -502,24 +495,70 @@ footer h4 {
     padding-top: 0.4em;
 }
 
+@media screen and (max-width: 900px) {
+     #page_principal {
+        width: auto;
+    }
+    
+    .title_page {
+        padding-left: 20px;
+    }
+    
+    #input_form{
+        width: 50%;
+    }
+    
+    section {
+        flex-direction: column-reverse;
+    }
+    
+    #plus_populaires {
+        border-radius: 0px;
+        margin-left: 0;
+    }
+     .plus_populaires_block {
+        width: 60%;
+    }
+    
+    .hebergements_block {
+        width: 40%;
+    }
+    
+     #activite_block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
-@media screen and (max-width: 800px){
+    .photo1, .photo2, .photo3, .photo4, .photo5, .photo6 {
+        height: 200px;
+        width: 40%;
+        align-self: center;
+        margin-top: 20px;
+    }
+    
+    #footer_box {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 600px){
     
     #page_principal {
         width: auto;
     }
 
-    header {
-        flex-wrap: wrap;
-    }
+   
     
     #menu div:hover {
         border-top: none;  
     } 
     
     #logo {
-          position: absolute;
+        position: absolute;
         top: 10px;
+        left: 10px;
     }
     #menu {
         display: flex;
@@ -531,11 +570,9 @@ footer h4 {
     }
     .media_menu {
         margin-top: 50px;
-        
         width: 100%;
         display: flex;
         justify-content: space-around;
-        border-bottom: 2px solid #FBFBFB;
     }
     
    
@@ -543,11 +580,14 @@ footer h4 {
        display: flex;
         justify-content: flex-end;
         width: 100%;
-        align-items:flex-start;
     }
     
     .media_menu div {
+        width: 50%;
         padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid #F2F2F2;
     }
     
     .media_menu div:hover {
@@ -572,16 +612,17 @@ footer h4 {
     }
     #input_form {
         margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
+        width: 100%;
     }
     
     button {
         display: none;
     }
    
+    #search {
+        width: 70%;
+    }
+    
     #loupe {
         display: flex;
         align-items: center;
@@ -589,20 +630,12 @@ footer h4 {
     }
     
     
- 
-    section {
-        flex-direction: column-reverse;
-    }
     
     #hebergements {
         background-color: #fff;
     }
     
-    #plus_populaires {
-        border-radius: 0px;
-        margin-left: 0;
-    }
-    
+   
     .plus_populaires_block {
         width: 90%;
     }
@@ -627,7 +660,9 @@ footer h4 {
         height: 200px;
         width: 90%;
         align-self: center;
+        margin-top: 20px;
     }
+    
     
     #footer_box {
         display: flex;
