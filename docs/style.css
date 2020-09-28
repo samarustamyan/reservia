@@ -557,14 +557,14 @@ footer h4 {
     
     #logo {
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: 8px;
+        left: 24px;
     }
     #menu {
         display: flex;
         flex-wrap: wrap-reverse;
         margin-top: 20px;
-        font-size: 20px;
+        font-size: 18px;
       
         
     }
