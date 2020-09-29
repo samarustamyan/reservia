@@ -113,6 +113,7 @@ label img {
     height: 20px;
 }
 
+/*button pour media querries*/
 #loupe {
     display: none;
     width: 12%;
@@ -126,7 +127,7 @@ label img {
     height: 20px;
 }
 
-
+/*titres principaux*/
 h2 {
     font-weight: 800;
     font-size: 20px;
@@ -134,12 +135,14 @@ h2 {
     
 }
 
+/*Le titre principal de la description.*/
 h4 {
     margin-top: 5px;
     font-weight: 300;
     margin-bottom: 10px;
 }
 
+/*block pour les filtres*/
 #filtres {
     width: 75%;
     display: flex;
@@ -238,6 +241,7 @@ section {
     
 }
 
+/*titre pribcipal pour block les plus populaires*/
 .name {
     margin: 30px;
     display: flex;
@@ -268,7 +272,7 @@ section {
     object-fit: cover;
 }
 
-
+/*Afficher plus*/
 #plus {
     padding-top: 10px;
     padding-left: 30px;
@@ -279,7 +283,6 @@ section {
 
 
 .description_block {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,6 +294,7 @@ section {
     margin: 0;
 }
 
+/*block les plus populaire*/
 
 #plus_populaires_container {
     display: flex;
@@ -314,6 +318,14 @@ section {
     transition: 0.5s;
 }
 
+.plus_populaires_photo {
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+}
+
 .plus_populaires_block:hover {
     opacity: 0.6;
 }
@@ -327,13 +339,6 @@ section {
     flex-wrap: wrap;
 }
 
-
-.description_plus_populaires .rating {
-    position: absolute;
-    bottom: 5px;
-    
-}
-
 .name_description {
     margin-bottom: 5px;
     font-size: 15px;
@@ -345,15 +350,11 @@ section {
     padding: 0;
 }
 
-.plus_populaires_photo {
-    width: 40%;
-    height: 100%;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    object-fit: cover;
+/* les étoiles dans la description*/
+.description_plus_populaires .rating {
+    position: absolute;
+    bottom: 5px;   
 }
-
-
 
 .rating {
 	padding-top: 5px;
@@ -380,7 +381,6 @@ section {
     grid-template-columns:  repeat(4, 1fr);
     grid-auto-rows: minmax(220px, auto);
     justify-content: space-between;
-    
     grid-gap: 30px;
 }
 
@@ -439,6 +439,7 @@ section {
 #activite_block div:hover {
     opacity: 0.6;
 }
+
 .activ_name {
     position: absolute;
     display: flex;
@@ -558,7 +559,7 @@ footer h4 {
     #logo {
         position: absolute;
         top: 8px;
-        left: 24px;
+        left: 10px;
     }
     #menu {
         display: flex;
