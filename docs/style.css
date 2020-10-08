@@ -18,11 +18,12 @@ header {
 
 #logo{
     display: flex;   
+    align-items: flex-end;
 }
 
 #menu {
     display: flex;
-    align-items: flex-end; 
+    align-items: flex-end;
     width: 100%;
     justify-content: flex-end;
 }
@@ -385,7 +386,7 @@ section {
 }
 
 
-#activite_block div {
+.photo1, .photo2, .photo3, .photo4, .photo5, .photo6 {
     position: relative;
     background-size: cover;
     background-position: center;
@@ -424,7 +425,7 @@ section {
 
 .photo5 {
     background-image: url(images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-   height: 180px;
+    height: 180px;
     grid-column: 4/4;
     grid-row: 1/2;   
 }
@@ -436,9 +437,6 @@ section {
 }
 
 
-#activite_block div:hover {
-    opacity: 0.6;
-}
 
 .activ_name {
     position: absolute;
@@ -496,6 +494,8 @@ footer h4 {
     padding-top: 0.4em;
 }
 
+
+
 @media screen and (max-width: 900px) {
      #page_principal {
         width: auto;
@@ -503,6 +503,10 @@ footer h4 {
     
     .title_page {
         padding-left: 20px;
+    }
+    
+    h2 {
+        font-size: 1.6em;
     }
     
     #input_form{
@@ -513,18 +517,26 @@ footer h4 {
         flex-direction: column-reverse;
     }
     
+    #hebergements {
+        background-color: #fff;
+    }
+    
     #plus_populaires {
+        
         border-radius: 0px;
         margin-left: 0;
     }
-     .plus_populaires_block {
-        width: 60%;
-    }
-    
+     
+   
     .hebergements_block {
         width: 40%;
     }
     
+/*    title de block activite a marseille*/
+    #activites_a_marseille {
+        padding-left: 25px;
+    }
+
      #activite_block {
         display: flex;
         flex-wrap: wrap;
@@ -546,11 +558,6 @@ footer h4 {
 
 @media screen and (max-width: 600px){
     
-    #page_principal {
-        width: auto;
-    }
-
-   
     
     #menu div:hover {
         border-top: none;  
@@ -608,9 +615,7 @@ footer h4 {
         margin-bottom: 10px;
     }
    
-    h2 {
-        font-size: 1.6em;
-    }
+    
     #input_form {
         margin-top: 20px;
         width: 100%;
@@ -631,12 +636,6 @@ footer h4 {
     }
     
     
-    
-    #hebergements {
-        background-color: #fff;
-    }
-    
-   
     .plus_populaires_block {
         width: 90%;
     }
