@@ -212,7 +212,7 @@ h4 {
 
 /* Hébergements à Marseille */
 
-section {
+.first_section {
     display: flex;
 }
 
@@ -232,14 +232,12 @@ section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex:3;
-  
+    flex:3; 
 }
 
 #plus_populaires {
     margin-left: 30px;
-    flex:1.2;
-    
+    flex:1.2;   
 }
 
 /*titre pribcipal pour block les plus populaires*/
@@ -513,7 +511,7 @@ footer h4 {
         width: 50%;
     }
     
-    section {
+    .first_section {
         flex-direction: column-reverse;
     }
     
