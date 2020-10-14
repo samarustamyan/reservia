@@ -181,10 +181,10 @@ h4 {
 .filtre_block img {
     display: flex;
     background-color: #DEEBFF;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     border-radius: 25px;
-    padding: 10px;
+    padding: 13px;
     
 }
 
@@ -396,18 +396,18 @@ h4 {
 
 .photo1 {
     grid-row: span 2;
-    background-image: url(images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);  
+    background-image: url(images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);  
 }
 
 
 .photo2 {
-    background-image: url(images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-image: url(images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
     grid-column: 2/3;
     grid-row: 1/2;   
 }
 
 .photo3 {
-   background-image: url(images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+   background-image: url(images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
    height: 180px;
    grid-column: 2/3;
    grid-row: 2/3;  
@@ -417,19 +417,19 @@ h4 {
 .photo4 {
     grid-column: 3 / 3;
     grid-row: span 2;
-    background-image: url(images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);  
+    background-image: url(images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);  
 }
 
 
 .photo5 {
-    background-image: url(images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-image: url(images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg);
     height: 180px;
     grid-column: 4/4;
     grid-row: 1/2;   
 }
 
 .photo6 {
-    background-image: url(images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-image: url(images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
     grid-column: 4/4;
     grid-row: 2/3;    
 }
@@ -515,6 +515,14 @@ footer h4 {
         flex-direction: column-reverse;
     }
     
+    #filtres ul {
+        width: 100%;
+    }
+    
+    .filtre_block {
+    margin-bottom: 10px;
+    }
+    
     #hebergements {
         background-color: #fff;
     }
@@ -545,7 +553,7 @@ footer h4 {
         height: 200px;
         width: 40%;
         align-self: center;
-        margin-top: 20px;
+        margin-bottom: 20px;
     }
     
     #footer_box {
@@ -609,10 +617,6 @@ footer h4 {
         width: 100%;
         
     }
-    .filtre_block {
-        margin-bottom: 10px;
-    }
-   
     
     #input_form {
         margin-top: 20px;
@@ -658,7 +662,6 @@ footer h4 {
         height: 200px;
         width: 90%;
         align-self: center;
-        margin-top: 20px;
     }
     
     
