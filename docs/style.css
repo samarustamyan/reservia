@@ -222,7 +222,7 @@ h4 {
     
 }
 
-#container {
+#hebergements_container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -492,9 +492,8 @@ footer h4 {
     padding-top: 0.4em;
 }
 
-
-
-@media screen and (max-width: 900px) {
+   
+@media screen and (max-width: 1100px) {
      #page_principal {
         width: auto;
     }
@@ -528,14 +527,23 @@ footer h4 {
     }
     
     #plus_populaires {
-        
         border-radius: 0px;
         margin-left: 0;
+    }
+    
+    #plus_populaires_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .plus_populaires_block {
+        width: 30%;
     }
      
    
     .hebergements_block {
-        width: 40%;
+        width: 30%;
     }
     
 /*    title de block activite a marseille*/
@@ -551,7 +559,7 @@ footer h4 {
 
     .photo1, .photo2, .photo3, .photo4, .photo5, .photo6 {
         height: 200px;
-        width: 40%;
+        width: 30%;
         align-self: center;
         margin-bottom: 20px;
     }
@@ -637,6 +645,10 @@ footer h4 {
         justify-content: center;
     }
     
+    #plus_populaires_container{
+        display: flex;
+        flex-direction: column;
+    }
     
     .plus_populaires_block {
         width: 90%;
